@@ -116,41 +116,54 @@
 
 % Amelia Marta Dilova 9-12
 \begin{exercise}
-  Contoh soal 9
+  Gambarlah topologi hybrid dengan topologi ring backbone dan dua jaringan topologi bus
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Lihat Pada Gambar Figure 1.2
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Kinerja berbanding terbalik dengan delay. Saat Anda menggunakan Internet, manakah di antara
+  aplikasi berikut yang lebih sensitif terhadap penundaan?
+  a. Mengirim Email
+  b. Mengcopy file
+  c. Menjelajahi internet
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  a. E-mail bukan aplikasi interaktif. Bahkan jika dikirim segera, itu
+  mungkin tinggal di kotak surat penerima untuk sementara waktu. Itu tidak sensitif terhadap penundaan
+  b. Kami biasanya tidak mengharapkan file untuk disalin segera. Itu tidak terlalu sensitif terhadap penundaan
+  c. Menjelajah di Internet adalah aplikasi yang sangat sensitif terhadap penundaan. Kami kecuali untuk
+  mendapatkan akses ke situs yang kita cari.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Ketika suatu pihak melakukan panggilan telepon lokal ke pihak lain, apakah ini point-to-point?
+  atau koneksi multipoint? Jelaskan jawabanmu
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Dalam hal ini, komunikasi hanya antara penelepon dan penerima panggilan. Sebuah jalur khusus dibuat di antara mereka. Koneksinya point-to-point
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal 12
+  Bandingkan jaringan telepon dan Internet. Apa persamaannya? Apa perbedaannya?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Jaringan telepon pada awalnya dirancang untuk komunikasi suara; itu
+  Internet pada awalnya dirancang untuk komunikasi data. Kedua jaringan tersebut adalah
+  serupa dalam kenyataan bahwa keduanya terbuat dari interkoneksi jaringan kecil. 
+  Itu jaringan telepon, seperti yang akan kita lihat di bab-bab selanjutnya, sebagian besar merupakan circuit-switched
+  jaringan; Internet sebagian besar merupakan jaringan packet-switched.
 \end{solution}
 
 \chapter{Network Model}
@@ -627,41 +640,60 @@ Sistem alarm biasanya periodik. Oleh karena itu, plot domain frekuensinya adalah
 
 % Amelia Marta Dilova 9-12
 \begin{exercise}
-  Contoh soal 9
+  Temukan aliran data 8-bit untuk setiap kasus yang digambarkan pada Gambar 4.36
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Aliran data dapat ditemukan sebagai berikut :
+  a. NRZ-I: 10011001
+  b. Differential Manchester: 11000100.
+  c. AMI: 01110001.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Sinyal NRZ-I memiliki kecepatan data 100 Kbps. Menggunakan Gambar 4.6, hitung nilainya
+  dari energi ternormalisasi (P) untuk frekuensi pada 0 Hz, 50 KHz, dan 100 KHz.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Kecepatan datanya 100 Kbps. Untuk setiap kasus, pertama-tama kita perlu menghitung nilai f / N. Kami kemudian menggunakan Gambar 4.6 dalam teks untuk menemukan P (energi per Hz). Semua perhitungan adalah perkiraan.
+  a. f /N = 0/100 = 0 → P = 1.0
+  b. f /N = 50/100 = 1/2 → P = 0.5
+  c. f /N = 100/100 = 1 → P = 0.0
+  d. f /N = 150/100 = 1.5 → P = 0.2
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Sinyal Manchester memiliki kecepatan data 100 Kbps. Menggunakan Gambar 4.8, hitung nilai energi ternormalisasi (P) untuk frekuensi pada 0 Hz, 50 KHz, 100 KHz.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Kecepatan datanya 100 Kbps. Untuk setiap kasus, pertama-tama kita perlu menghitung nilai f/N. Kami kemudian menggunakan Gambar 4.8 dalam teks untuk menemukan P (energi per Hz).
+  Semua perhitungan adalah perkiraan.
+  a. f /N = 0/100 = 0 → P = 0.0
+  b. f /N = 50/100 = 1/2 → P = 0.3
+  c. f /N = 100/100 = 1 → P = 0.4
+  d. f /N = 150/100 = 1.5 → P = 0.0 
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Aliran input ke encoder blok 4B/5B adalah 0100 0000 0000 0000 0000 OOOI.
+  Jawab pertanyaan berikut:
+  a. Apa aliran keluarannya?
+  b. Berapakah panjang barisan Os berturut-turut terpanjang di input?
+  c. Berapakah panjang urutan Os berturut-turut terpanjang dalam output?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  a. Aliran keluaran adalah 01010 11110 11110 11110 11110 01001
+  b. Panjang maksimum 0s berturut-turut dalam aliran input adalah 21
+  c. Panjang maksimum 0s berturut-turut dalam aliran output adalah 2.
 \end{solution}
 
 \vspace{12pt}
