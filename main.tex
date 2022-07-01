@@ -29,9 +29,7 @@
 \end{exercise}
 
 \begin{solution}
-  Standar Unicode mendefinisikan nilai untuk lebih dari 128.000 karakter, dan dapat dilihat di Unicode Consortium. Ini memiliki beberapa bentuk pengkodean karakter
-  UTF-8 hanya menggunakan 1 byte , UTF-16 menggunakan 2 byte dan UTF-32 menggunakan 4 byte dan UTF-32 mampu mewakili setiap unicode sebagai 1 nomer
-  untuk jumlah maksimum karakter tidak diketahui
+  Unicode menggunakan 32 bit untuk mewakili simbol atau karakter. Kita dapat mendefinisikan 2^32 simbol atau karakter yang berbeda.
 \end{solution}
 
 \vspace{12pt}
@@ -41,10 +39,7 @@
 \end{exercise}
 
 \begin{solution}
-  16 bit dibutuhkan untuk tiap piksel.Seringnya, tiap komponen R, G, dan B memiliki 5 bit. Satu bit sisa dipakai untuk saluran masker atau penanda pemakaian warna terindeks.
-  Cara ini memberikan 32.768 warna yang bisa ditampilkan. 
-  Namun, pengaturan lainnya yang memberikan komponen G sebanyak 6 bit memberikan 65.536 warna, tetapi tanpa warna transparan.
-  empat bit per komponen warna dan empat bit untuk transparansi dipakai sehingga hanya didukung 4.096 warna.
+  Dengan 16 bit,bisa mewakili hingga 2^16 warna berbeda
 \end{solution}
 
 \vspace{12pt}
@@ -54,7 +49,7 @@
 \end{exercise}
 
 \begin{solution}
-  Untuk menghitung kabel dan ports yang digunakan dalam topologi mesh, harus menggunakan rumus N*N-1/2 jika yang digunakan 6 komputer maka 6*6-1/2 = 15 koneksi atau kabel dan 15 port
+  Untuk menghitung kabel dan ports yang digunakan dalam topologi mesh, harus menggunakan rumus N*N-1/2 jika yang digunakan 6 perangkat maka 6*6-1/2 dan untuk port n-1 jika 6 perangkat maka 6 - 1 = 5 port
 \end{solution}
 
 \vspace{12pt}
@@ -68,10 +63,10 @@
 \end{exercise}
 
 \begin{solution}
-  a. Mesh adalah redundansi tinggi. Hanya satu perangkat yang akan terputus jikasemua koneksi gagal untuk perangkat itu. Anda dapat memiliki banyak koneksi keperangkat lain, karena itu kecil kemungkinannya untuk gagal. Satu-satunyapenyebab kegagalan pada titik ini adalah kekuatan dan jika Anda tidakmemilikinya. Bahkan jika salah satu koneksi antara dua perangkat gagal tidak adaefek pada jaringan dan mereka masih dapat berkomunikasi melalui saluran lain.
-  b. untuk topologi star tidak masalah selagi itu bukan host dan perangkat yang lain masih bisa berkoneksi
-  c. topologi bus jika terjadi kerusakan pada lokasi jaringan utama. Seperti yang telah dijelaskan sebelumnya, bahwa jaringan utama harus bebas dari aktivitas yang lain dan sebisa mungkin tidak mengalami masalah. Sekali jaringan utama mengalami kerusakan, otomatis semua jaringan yang menghubungkan dengan tiap komputer lainnya akan mengalami masalah juga.
-  d. untuk topologi ring semua nya tergantung pada node jadi jika jaringan/koneksi mati otomatis semua perangkat akan terpengaruh
+  a. Jika satu koneksi gagal, koneksi lainnya akan tetap berfungsi.
+  b. Perangkat lain masih dapat mengirim data melalui hub; tidak akan ada bisa mengakses pada perangkat yang koneksinya gagal ke hub
+  c. Semua transmisi berhenti jika kegagalan ada di bus. Jika drop-line gagal, hanya perangkat yang ada pada jalur tersebut yang tidak dapat beroperasi
+  d. Koneksi yang gagal dapat mematikan seluruh jaringan kecuali jika ada cincin ganda atau ada mekanisme by-pass
 \end{solution}
 
 \vspace{12pt}
