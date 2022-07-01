@@ -304,31 +304,31 @@ Jika alamat tujuan yang rusak tidak cocok dengan alamat stasiun mana pun di jari
 
 % Karel Chavez H 4-6
 \begin{exercise}
-  Contoh soal 4
+Berapakah lebar bandwidth suatu sinyal yang dapat diuraikan menjadi lima gelombang sinus dengan frekuensi 0, 20, 50, 100, dan 200 Hz? Semua amplitudo puncak adalah sama. Gambarkan bandwidthnya.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+220 ns = 220 x 10 -9 s = apakah bandwidth suatu sinyal dapat diuraikan menjadi lima gelombang sinus dengan frekuensi 0, 20, 50, 100, dan 200 Hz? Semua amplitudo puncak adalah sama.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Sinyal composite signal dengan bandwidth 2000 Hz terdiri dari dua gelombang sinus. Yang pertama memiliki frekuensi 100 Hz dengan amplitudo maksimum 20 V; yang kedua memiliki amplitudo maksimum 5 V. Gambarkan bandwidthnya.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+bandwidth = Fh - Fl, bandwith = 2000 , Terendah = 100 , Tertinggi = 2100 Fh - Fl = 2100 - 100 ,bandwith = 2000
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Sinyal manakah yang memiliki bandwidth lebih lebar, gelombang sinus dengan frekuensi 100 Hz atau gelombang sinus dengan frekuensi 200 Hz?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+setiap sinyal adalah sinyal sederhana dalam hal ini. Bandwidth dari sinyal sederhana adalah 0.jadi, bandwidth dari kedua sinyal r sama.
 \end{solution}
 
 \vspace{12pt}
@@ -851,41 +851,75 @@ Kita dapat menggunakan rumus: N = [1/(1 + d)] × r × B = 1 × 6 × 6 MHz = 36 M
 
 % Karel Chavez H 9-12
 \begin{exercise}
-  Contoh soal 9
+Sebuah perusahaan memiliki media dengan bandwidth 1-MHz (lowpass). Korporasi perlu membuat 10 saluran independen terpisah yang masing-masing mampu mengirim setidaknya 10 Mbps. Perusahaan telah memutuskan untuk menggunakan teknologi QAM. Berapa jumlah bit minimum per baud untuk setiap saluran? Berapa jumlah titik dalam diagram konstelasi untuk setiap saluran? Misalkan d = O.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+Pertama, kami menghitung bandwidth untuk setiap saluran = (1 MHz) / 10 = 100 KHz. Kami kemudian menemukan nilai r untuk setiap saluran: B = (1 + d) × (1/r) × (N) →r = N / B →r = (1 Mbps/100 KHz) = 10 Kemudian kita dapat menghitung jumlah level: L = 2r = 210 = 1024. Ini berarti bahwa kita memerlukan teknik 1024-QAM untuk mencapai kecepatan data ini.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Berapa bit per baud yang dapat kita kirim dalam setiap kasus berikut jika konstelasi sinyal memiliki salah satu dari jumlah titik berikut?
+\begin{itemize}
+\item[a.] 2
+\item[b.] 4
+\item[c.] 16
+\item[d.] 1024
+\end{itemize}
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  \begin{itemize}
+    \item[a.] $log_22 = 1$
+    \item[b.] $log_24 = 2$
+    \item[c.] $log_216 = 4$
+    \item[d.] $log_21024 = 10 $
+  \end{itemize}
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Hitung bit rate untuk baud rate yang diberikan dan jenis modulasi
+  \begin{itemize}
+    \item[a.] 1000 baud, FSK
+    \item[b.] 1000 baud, ASK
+    \item[c.] 1000 baud, BPSK
+    \item[d.] 1000 baud, 16-QAM
+  \end{itemize}
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+\begin{itemize}
+    \item[a.] Modulator yang dimaksud adalah FSK dan r = 1 Jadi, baud rate = 2000bps/1 baud rate = 2000baud
+    \item[b.] Modulator yang digunakan adalah ASK dan r = 1, baud rate = 4000bps/1 baud rate = 4000baud
+    \item[c.] Modulator yang digunakan adalah QPSK/4-PSK dan r = 2, Jadi, baud rate = 6000bps/2 baud rate = 3000baud
+    \item[d.] Modulator yang digunakan adalah 64-QAM, baud rate = 36000/6 baud rate = 6000baud
+  \end{itemize}
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Berapa jumlah bit per baud untuk teknik berikut?
+  \begin{itemize}
+    \item[a.] ASK dengan empat amplitudo berbeda
+    \item[b.] FSK dengan 8 frekuensi berbeda
+    \item[c.] PSK dengan empat fase berbeda
+    \item[d.] QAM dengan konstelasi 128 point
+  \end{itemize}
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+Kami menggunakan rumus $r = log_2L untuk menghitung nilai r untuk setiap kasus.$
+  \begin{itemize}
+    \item[a.] $log_24 = 2$
+    \item[b.] $log_28 = 3$
+    \item[c.] $log_24 = 2$
+    \item[d.] $log_2128 = 7$
+  \end{itemize}
 \end{solution}
 
 \chapter{Bandwidth Utilization: Multiplexing and Spreading}
