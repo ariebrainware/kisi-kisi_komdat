@@ -29,7 +29,7 @@
 \end{exercise}
 
 \begin{solution}
-  Unicode menggunakan 32 bit untuk mewakili simbol atau karakter. Kita dapat mendefinisikan 2^32 simbol atau karakter yang berbeda.
+  Unicode menggunakan 32 bit untuk mewakili simbol atau karakter. Kita dapat mendefinisikan $2^{32}$ simbol atau karakter yang berbeda.
 \end{solution}
 
 \vspace{12pt}
@@ -39,7 +39,7 @@
 \end{exercise}
 
 \begin{solution}
-  Dengan 16 bit,bisa mewakili hingga 2^16 warna berbeda
+  Dengan 16 bit,bisa mewakili hingga $2^{16}$ warna berbeda
 \end{solution}
 
 \vspace{12pt}
@@ -49,17 +49,19 @@
 \end{exercise}
 
 \begin{solution}
-  Untuk menghitung kabel dan ports yang digunakan dalam topologi mesh, harus menggunakan rumus N*N-1/2 jika yang digunakan 6 perangkat maka 6*6-1/2 dan untuk port n-1 jika 6 perangkat maka 6 - 1 = 5 port
+  Untuk menghitung kabel dan ports yang digunakan dalam topologi mesh, harus menggunakan rumus $(N \times (N-1))/2$ jika yang digunakan 6 perangkat maka 66-1/2 dan untuk port n-1 jika 6 perangkat maka 6 - 1 = 5 port
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
   Dari empat jaringan berikut, diskusikan konsekuensinya jika koneksi gagal
-  a. 5 Perangkat dengan topologi mesh
-  b. 5 Perangkat dengan topologi Star
-  c. 5 Perangkat dengan topologi bus
-  d. 5 Perangkat dengan topologi ring
+  \begin{itemize}
+    \item[a.] 5 Perangkat dengan topologi mesh
+    \item[b.] 5 Perangkat dengan topologi Star
+    \item[c.] 5 Perangkat dengan topologi bus
+    \item[d.] 5 Perangkat dengan topologi ring
+  \end{itemize}
 \end{exercise}
 
 \begin{solution}
@@ -174,10 +176,12 @@
 \end{exercise}
 
 \begin{solution}
-  a. Network Layer Untuk mendefinisikan alamat-alamat IP dan menyediakan fungsi routing sehingga paket dapat dikirim keluar dari segment network lokal ke suatu tujuan yang berada pada suatu network lain. Contoh protocol yang digunakan seperti IP
-  b. Application Layer Merupakan layer dimana terjadi interaksi antarmuka end user dengan aplikasi yang bekerja menggunakan fungsionalitas jaringan, melakukan pengaturan bagaimana aplikasi bekerja menggunakan resource jaringan, untuk kemudian memberika pesan ketika terjadi kesalahan. Beberapa service dan protokol yang berada di layer ini misalnya HTTP, FTP, SMTP, dll.
-  c. Presentation Layer adalah presentation layer, dimana mempunyai fungsi untuk mentranslasikan format data yang akan ditransmisikan oleh aplikasi melalui jaringan, ke dalam format yang dapat ditransmisikan oleh sebuah jaringan.
-  d. Session Layer juga mengatur checkpoint selama proses transfer, apabila session terganggu, perangkat dapat melanjutkan transfer data dari checkpoint terakhir.
+  \begin{itemize}
+    \item[a.] Network Layer Untuk mendefinisikan alamat-alamat IP dan menyediakan fungsi routing sehingga paket dapat dikirim keluar dari segment network lokal ke suatu tujuan yang berada pada suatu network lain. Contoh protocol yang digunakan seperti IP
+    \item[b.] Application Layer Merupakan layer dimana terjadi interaksi antarmuka end user dengan aplikasi yang bekerja menggunakan fungsionalitas jaringan, melakukan pengaturan bagaimana aplikasi bekerja menggunakan resource jaringan, untuk kemudian memberika pesan ketika terjadi kesalahan. Beberapa service dan protokol yang berada di layer ini misalnya HTTP, FTP, SMTP, dll.
+    \item[c.] Presentation Layer adalah presentation layer, dimana mempunyai fungsi untuk mentranslasikan format data yang akan ditransmisikan oleh aplikasi melalui jaringan, ke dalam format yang dapat ditransmisikan oleh sebuah jaringan.
+    \item[d.] Session Layer juga mengatur checkpoint selama proses transfer, apabila session terganggu, perangkat dapat melanjutkan transfer data dari checkpoint terakhir.
+  \end{itemize}
 \end{solution}
 
 \vspace{12pt}
@@ -684,10 +688,7 @@ Sistem alarm biasanya periodik. Oleh karena itu, plot domain frekuensinya adalah
 \vspace{12pt}
 
 \begin{exercise}
-  Gambarkan grafik skema NRZ-L menggunakan masing-masing aliran data berikut,
-  dengan asumsi bahwa signa11evel terakhir telah positif. Dari grafik, tebak
-  bandwidth untuk skema ini menggunakan jumlah rata-rata perubahan level sinyal.
-  Bandingkan tebakan Anda dengan entri yang sesuai pada Tabel 4.1.
+  Gambarkan grafik skema NRZ-L menggunakan masing-masing aliran data berikut, dengan asumsi bahwa signa11evel terakhir telah positif. Dari grafik, tebak bandwidth untuk skema ini menggunakan jumlah rata-rata perubahan level sinyal. Bandingkan tebakan Anda dengan entri yang sesuai pada Tabel 4.1.
   sebuah. 
   a. 00000000
   b. 11111111
@@ -796,19 +797,19 @@ Mengingat frekuensi sinyal suara -
 =5kHz
 
 a) Bandwidth modulasi amplitudo Bam=2B
-=2 × 5kHz
+=2 x 5kHz
 =10kHz
 
 b) Bandwidth yang dibutuhkan untuk modulasi fase
-Bpm=2(1+β)B 
+$Bpm=2(1+\beta)B$ 
 Sekarang, menggantikan nilai-nilai,
-=2(1+3) × 5kHz
+=2(1+3) x 5kHz
 =40kHz
 
 c) Bandwidth yang dibutuhkan untuk modulasi fase,
-Bpm=2(1+β)B 
+$Bpm=2(1+\beta)B$ 
 Sekarang, menggantikan nilai-nilai,
-=2(1+1) × 5kHz
+=2(1+1) x 5kHz
 =20kHz
 \end{solution}
 
