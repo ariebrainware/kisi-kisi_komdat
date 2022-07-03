@@ -1,166 +1,180 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2022.5.22)  1 JUL 2022 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.2)  3 JUL 2022 23:47
 entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
 **"d:/ITEBA/Kuliah/TK4306 Komunikasi Data/tugas/karyawan/perbaikan uts/main.tex"
 (d:/ITEBA/Kuliah/TK4306 Komunikasi Data/tugas/karyawan/perbaikan uts/main.tex
-LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-07-12> (C:\Program Files\MiKTeX\tex/latex/base\book.cls
-Document Class: book 2021/02/12 v1.4n Standard LaTeX document class
+LaTeX2e <2022-06-01> patch level 3
+L3 programming layer <2022-06-16> (C:\Program Files\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
 (C:\Program Files\MiKTeX\tex/latex/base\bk10.clo
-File: bk10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count182
-\c@chapter=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 ) (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
  (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 227.
  (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
-)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-\c@exer=\count191
+) (C:\Program Files\MiKTeX\tex/latex-dev/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count194
+\Gm@cntv=\count195
+\c@Gm@tempcnt=\count196
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+ (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
+\c@exer=\count197
  (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-07-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count192
-\l__pdf_internal_box=\box50
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count198
+\l__pdf_internal_box=\box51
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count193
-\scratchdimen=\dimen139
-\scratchbox=\box51
-\nofMPsegments=\count194
-\nofMParguments=\count195
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count196
-\MPscratchDim=\dimen140
-\MPnumerator=\count197
-\makeMPintoPDFobject=\count198
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count199
+\scratchdimen=\dimen147
+\scratchbox=\box52
+\nofMPsegments=\count266
+\nofMParguments=\count267
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count268
+\MPscratchDim=\dimen148
+\MPnumerator=\count269
+\makeMPintoPDFobject=\count270
+\everyMPtoPDFconversion=\toks19
 )
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=69.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 Chapter 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 32.
+(Font)              <7> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 32.
-
-Overfull \hbox (5.45865pt too wide) in paragraph at lines 58--59
-[]\OT1/cmr/bx/n/10 Latihan 1.4 []\OT1/cmr/m/n/10 Dari em-pat jaringan berikut, diskusikan kon-sekuensinya jika koneksi
- []
-
+(Font)              <5> on input line 34.
 [1
 
 
-{C:/Users/muhammadoginh/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
+{C:/Users/muhammadoginh/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
 Chapter 2.
-
-Overfull \hbox (6.21463pt too wide) in paragraph at lines 181--182
-\OT1/cmr/m/it/10 end user den-gan ap-likasi yang bek-erja meng-gu-nakan fung-sion-al-i-tas jaringan,
- []
-
 [3
 
-]
-Overfull \hbox (5.23668pt too wide) in paragraph at lines 199--205
-\OT1/cmr/m/it/10 ketiga ini memi-liki dua fungsi utama yaitu men-e-mukan jalur ter-baik pada jaringan
- []
-
-
-Overfull \hbox (1.63965pt too wide) in paragraph at lines 272--273
-\OT1/cmr/m/n/10 men-gapa menu-rut Anda kita memer-lukan mekanisme pe-merik-saan lain di lapisan
- []
-
-[4] [5]
+] [4]
 Chapter 3.
-[6
+[5
 
-] [7] [8]
+] [6] [7]
 Chapter 4.
-[9
+[8
 
-] [10]
+] [9]
 Chapter 5.
+[10
 
-Overfull \hbox (9.05623pt too wide) in paragraph at lines 803--808
-[]\OT1/cmr/m/it/10 b) Band-width yang dibu-tuhkan un-tuk mod-u-lasi fase $\OML/cmm/m/it/10 Bpm \OT1/cmr/m/n/10 = 2(1 + \OML/cmm/m/it/10 \OT1/cmr/m/n/10 )\OML/cmm/m/it/10 B$ \OT1/cmr/m/it/10 Sekarang,
- []
-
-[11
-
-] [12]
-Overfull \hbox (9.55145pt too wide) in paragraph at lines 934--935
-[]\OT1/cmr/m/it/10 Modulator yang di-mak-sud adalah FSK dan r = 1 Jadi, baud rate = 2000bps/1
- []
-
-
-Overfull \hbox (38.35959pt too wide) in paragraph at lines 953--955
-[]\OT1/cmr/bx/n/10 Solusi[]  \OT1/cmr/m/it/10 Kami meng-gu-nakan ru-mus $\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 log[]Luntukmenghitungnilairuntuksetiapkasus:$ 
- []
-
-[13]
+] [11] [12]
 Chapter 6.
-[14
+[13
 
-]
-Overfull \hbox (38.65472pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 CHAPTER 6.  BANDWIDTH UTILIZATION: MULTIPLEXING AND SPREADING \OT1/cmr/m/n/10 15
- []
-
-[15]
-Overfull \hbox (38.65472pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10 CHAPTER 6.  BANDWIDTH UTILIZATION: MULTIPLEXING AND SPREADING \OT1/cmr/m/n/10 16
- []
-
-[16] (main.aux) ) 
+] [14] [15] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 1396 strings out of 478870
- 19443 string characters out of 2858669
- 322753 words of memory out of 3000000
- 19369 multiletter control sequences out of 15000+600000
- 405727 words of font info for 34 fonts, out of 8000000 for 9000
+ 2064 strings out of 478351
+ 31106 string characters out of 2846844
+ 349236 words of memory out of 3000000
+ 20517 multiletter control sequences out of 15000+600000
+ 471556 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,47p,564b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,62p,774b,258s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\muhammadoginh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (16 pages, 152614 bytes).
+Output written on main.pdf (15 pages, 160267 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
