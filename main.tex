@@ -1,6 +1,8 @@
 \documentclass[oneside]{book}
 \usepackage{xcolor}
 
+\usepackage[margin=2.5cm]{geometry}
+
 
 \newcommand{\exercisename}{Latihan}
 \newcommand{\solutionname}{Solusi}
@@ -25,41 +27,50 @@
 
 % Pritami Sergio 1-4
 \begin{exercise}
-    Contoh soal 1
+  berapa jumlah maksimum karakter atau simbol yang dapat diwakili oleh unicode?
 \end{exercise}
 
 \begin{solution}
-    Contoh solusi
+  Unicode menggunakan 32 bit untuk mewakili simbol atau karakter. Kita dapat mendefinisikan $2^{32}$ simbol atau karakter yang berbeda.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Gambar berwarna menggunakan 16 bit untuk mewakili satu piksel, berapa jumlah maksimum warna berbeda yang dapat direpresentasikan?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Dengan 16 bit,bisa mewakili hingga $2^{16}$ warna berbeda
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  asumsikan enam perangkat disusun dalam topologi mesh berapa banyak kabel yang dibutuhkan? dan berapa banyak port yang dibutuhkan untuk setiap perangkat ?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Untuk menghitung kabel dan ports yang digunakan dalam topologi mesh, harus menggunakan rumus $(N \times (N-1))/2$ jika yang digunakan 6 perangkat maka 66-1/2 dan untuk port n-1 jika 6 perangkat maka 6 - 1 = 5 port
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Dari empat jaringan berikut, diskusikan konsekuensinya jika koneksi gagal
+  \begin{itemize}
+    \item[a.] 5 Perangkat dengan topologi mesh
+    \item[b.] 5 Perangkat dengan topologi Star
+    \item[c.] 5 Perangkat dengan topologi bus
+    \item[d.] 5 Perangkat dengan topologi ring
+  \end{itemize}
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  a. Jika satu koneksi gagal, koneksi lainnya akan tetap berfungsi.
+  b. Perangkat lain masih dapat mengirim data melalui hub; tidak akan ada bisa mengakses pada perangkat yang koneksinya gagal ke hub
+  c. Semua transmisi berhenti jika kegagalan ada di bus. Jika drop-line gagal, hanya perangkat yang ada pada jalur tersebut yang tidak dapat beroperasi
+  d. Koneksi yang gagal dapat mematikan seluruh jaringan kecuali jika ada cincin ganda atau ada mekanisme by-pass
 \end{solution}
 
 \vspace{12pt}
@@ -107,72 +118,105 @@
 
 % Amelia Marta Dilova 9-12
 \begin{exercise}
-  Contoh soal 9
+  Gambarlah topologi hybrid dengan topologi ring backbone dan dua jaringan topologi bus
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Lihat Pada Gambar Figure 1.2
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Kinerja berbanding terbalik dengan delay. Saat Anda menggunakan Internet, manakah di antara
+  aplikasi berikut yang lebih sensitif terhadap penundaan?
+  a. Mengirim Email
+  b. Mengcopy file
+  c. Menjelajahi internet
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  a. E-mail bukan aplikasi interaktif. Bahkan jika dikirim segera, itu
+  mungkin tinggal di kotak surat penerima untuk sementara waktu. Itu tidak sensitif terhadap penundaan
+  b. Kami biasanya tidak mengharapkan file untuk disalin segera. Itu tidak terlalu sensitif terhadap penundaan
+  c. Menjelajah di Internet adalah aplikasi yang sangat sensitif terhadap penundaan. Kami kecuali untuk
+  mendapatkan akses ke situs yang kita cari.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Ketika suatu pihak melakukan panggilan telepon lokal ke pihak lain, apakah ini point-to-point?
+  atau koneksi multipoint? Jelaskan jawabanmu
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Dalam hal ini, komunikasi hanya antara penelepon dan penerima panggilan. Sebuah jalur khusus dibuat di antara mereka. Koneksinya point-to-point
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal 12
+  Bandingkan jaringan telepon dan Internet. Apa persamaannya? Apa perbedaannya?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Jaringan telepon pada awalnya dirancang untuk komunikasi suara; itu
+  Internet pada awalnya dirancang untuk komunikasi data. Kedua jaringan tersebut adalah
+  serupa dalam kenyataan bahwa keduanya terbuat dari interkoneksi jaringan kecil. 
+  Itu jaringan telepon, seperti yang akan kita lihat di bab-bab selanjutnya, sebagian besar merupakan circuit-switched
+  jaringan; Internet sebagian besar merupakan jaringan packet-switched.
 \end{solution}
 
 \chapter{Network Model}
 
 % Muhammad Riyadhtul Akbar 1-3
 \begin{exercise}
-  Contoh soal 1
+  Bagaimana OSI dan ISO terkait satu sama lain?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  OSI dipakai sebagai model untuk membentuk standar umum jaringan komputer sehingga menunjang antaroperasi perangkat jaringan dari pemasok perangkat jaringan yang berbeda. ISO ialah organisasi yg dibentuk untuk membuat dan memperkenalkan standardisasi internasional untuk apa saja
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Cocokkan yang berikut ini dengan satu atau lebih lapisan model OSI:
+  sebuah. 
+  a. Penentuan rute
+  b. Alur kontrol
+  c. Antarmuka ke media transmisi
+  d. Menyediakan akses untuk pengguna akhir
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  \begin{itemize}
+    \item[a.] Network Layer Untuk mendefinisikan alamat-alamat IP dan menyediakan fungsi routing sehingga paket dapat dikirim keluar dari segment network lokal ke suatu tujuan yang berada pada suatu network lain. Contoh protocol yang digunakan seperti IP
+    \item[b.] Application Layer Merupakan layer dimana terjadi interaksi antarmuka end user dengan aplikasi yang bekerja menggunakan fungsionalitas jaringan, melakukan pengaturan bagaimana aplikasi bekerja menggunakan resource jaringan, untuk kemudian memberika pesan ketika terjadi kesalahan. Beberapa service dan protokol yang berada di layer ini misalnya HTTP, FTP, SMTP, dll.
+    \item[c.] Presentation Layer adalah presentation layer, dimana mempunyai fungsi untuk mentranslasikan format data yang akan ditransmisikan oleh aplikasi melalui jaringan, ke dalam format yang dapat ditransmisikan oleh sebuah jaringan.
+    \item[d.] Session Layer juga mengatur checkpoint selama proses transfer, apabila session terganggu, perangkat dapat melanjutkan transfer data dari checkpoint terakhir.
+  \end{itemize}
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Cocokkan yang berikut ini dengan satu atau lebih lapisan model OSI:
+  sebuah. 
+  a. Pengiriman pesan proses-ke-proses yang andal
+  b. Pemilihan rute
+  c. Mendefinisikan frame
+  d. Menyediakan layanan pengguna seperti email dan transfer file
+  e. Transmisi aliran bit melintasi media fisik
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  a. Transport Layer bertugas untuk mengambil data dari session layer dan membaginya ke bagian-bagian paket data yang lebih kecil. Kemudian data yang sudah sampai ke tujuan akan digabung kembali.
+  b.  Network Layer Layer ketiga ini memiliki dua fungsi utama yaitu menemukan jalur terbaik pada jaringan (routing) untuk proses pertukaran data.
+  c. Pada data-link layer memiliki tugas untuk menentukan setiap bit data dikelompokkan menjadi format yang disebut dengan frame. Pada level ini juga terjadi koreksi kesalahan, flow control, pengalamatan hardware atau perangkat keras (seperti halnya pada MAC Address (Media Access Control Address)). 
+  d. Presentation Layer saat data mulai ditransfer, dan bertindak ketika sebuah komputer menerima paket data disebut dengan nama Presentation Layer. Funsi utama dari lapisan layer presentation ini adalah menteranslate data yang akan ditransmisikan dari dan menuju sebuah application (aplikasi).
+  e. Physical Layer Tentu saja hal itu dilakukan dari physical layer pengirim dan ditujukan kepada physical layer penerima.Nantinya di sini data juga akan ditransmisikan dengan memakai jenis sinyal yang telah didukung media fisik.
 \end{solution}
 
 \vspace{12pt}
@@ -218,43 +262,43 @@
 
 \vspace{12pt}
 
-% Rizky Sandiary 8-11
+% Rizky Sandiary 8-11 (diperbaiki)
 \begin{exercise}
-  Contoh soal 8
+Bagaimana OSI dan ISO terkait satu sama lain?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+ISO adalah organisasi (Organisasi Standar Internasional), dan OSI (Interkoneksi Sistem Terbuka) adalah modelnya.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Misalkan komputer mengirimkan paket pada lapisan jaringan ke komputer lain di suatu tempat di Internet. Alamat tujuan logis dari paket rusak. Apa yang terjadi pada paket? Bagaimana komputer sumber dapat mengetahui situasinya?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+Sebelum menggunakan alamat tujuan di perantara atau node tujuan, paket melewati pemeriksaan kesalahan yang dapat membantu node menemukan korupsi (dengan probabilitas tinggi) dan membuang paket. Biasanya protokol lapisan atas akan menginformasikan sumber untuk mengirim ulang paket.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Jika lapisan data link dapat mendeteksi kesalahan antar hop, mengapa menurut Anda kita memerlukan mekanisme pemeriksaan lain di lapisan transport?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+Kesalahan antar node dapat dideteksi oleh kontrol lapisan data link, tetapi kesalahan pada node (antara port input dan port output) dari node tidak dapat dideteksi oleh lapisan data link
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Misalkan sebuah komputer mengirimkan sebuah frame ke komputer lain pada topologi bus LAN. Alamat tujuan fisik frame rusak selama transmisi. Apa yang terjadi pada bingkai? Bagaimana pengirim dapat diberitahu tentang situasinya?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+Jika alamat tujuan yang rusak tidak cocok dengan alamat stasiun mana pun di jaringan, paket akan hilang. Jika alamat tujuan yang rusak cocok dengan salah satu stasiun, frame dikirimkan ke stasiun yang salah. Namun, dalam kasus ini, mekanisme pendeteksian kesalahan, yang tersedia di sebagian besar protokol tautan data, akan menemukan kesalahan dan membuang bingkai. Dalam kedua kasus, sumber entah bagaimana akan diinformasikan menggunakan salah satu mekanisme kontrol tautan data.
 \end{solution}
 
 \chapter{Data and Signals}
@@ -292,36 +336,36 @@
 
 % Karel Chavez H 4-6
 \begin{exercise}
-  Contoh soal 4
+Berapakah lebar bandwidth suatu sinyal yang dapat diuraikan menjadi lima gelombang sinus dengan frekuensi 0, 20, 50, 100, dan 200 Hz? Semua amplitudo puncak adalah sama. Gambarkan bandwidthnya.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+220 ns = 220 x 10 -9 s = apakah bandwidth suatu sinyal dapat diuraikan menjadi lima gelombang sinus dengan frekuensi 0, 20, 50, 100, dan 200 Hz? Semua amplitudo puncak adalah sama.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Sinyal composite signal dengan bandwidth 2000 Hz terdiri dari dua gelombang sinus. Yang pertama memiliki frekuensi 100 Hz dengan amplitudo maksimum 20 V; yang kedua memiliki amplitudo maksimum 5 V. Gambarkan bandwidthnya.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+bandwidth = Fh - Fl, bandwith = 2000 , Terendah = 100 , Tertinggi = 2100 Fh - Fl = 2100 - 100 ,bandwith = 2000
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Sinyal manakah yang memiliki bandwidth lebih lebar, gelombang sinus dengan frekuensi 100 Hz atau gelombang sinus dengan frekuensi 200 Hz?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+setiap sinyal adalah sinyal sederhana dalam hal ini. Bandwidth dari sinyal sederhana adalah 0.jadi, bandwidth dari kedua sinyal r sama.
 \end{solution}
 
 \vspace{12pt}
 
-% Muhammad Arie Setya Putra Pala 7-9
+% Muhammad Arie Setya Putra Pala 7-9 (diperbaiki)
 \begin{exercise}
 \\
 Apa hubungan teorema Nyquist dengan komunikasi?
@@ -394,43 +438,49 @@ Sistem alarm biasanya periodik. Oleh karena itu, plot domain frekuensinya adalah
 
 \vspace{12pt}
 
-% Fajar Bimantara 13-16
+% Fajar Bimantara 13-16 (28-31)
 \begin{exercise}
-  Contoh soal 13
+  Kami mengirim sinyal suara dari mikrofon ke perekam. Apakah ini transmisi baseband atau broadband?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  broadband
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Kami mengirim sinyal digital dari satu stasiun di LAN ke stasiun lain. Apakah ini transmisi baseband atau broadband?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  broadband
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Kami memodulasi beberapa sinyal suara dan mengirimkannya melalui udara. Apakah ini pita dasar? atau transmisi broadband? Latihan
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  pita dasar
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Mengingat frekuensi yang tercantum di bawah ini, hitung periode yang sesuai.
+  sebuah. 
+  a. 24Hz
+  b. 8 MHz
+  c. 140 KHz
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  a. 12491352.42m
+  b. 37.462818375m
+  c. 2140.73m
 \end{solution}
 
 \vspace{12pt}
@@ -507,44 +557,52 @@ Sistem alarm biasanya periodik. Oleh karena itu, plot domain frekuensinya adalah
 
 \chapter{Digital Transmission}
 
-% Pritami Sergio 1-4
+% Pritami Sergio 1-4 (oke)
 \begin{exercise}
-  Contoh soal 1
+  Hitung nilai rata-rata kecepatan sinyal untuk setiap kasus pada Gambar 4.2 jika rata-rata kecepatan data 1 Mbps dan c = 1/2
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Kami menggunakan rumus s = c * N * (1/r) untuk setiap kasus. Kita misalkan c = 1/2
+  a. r = 1 → s = (1/2) * (1 Mbps) * 1/1 = 500 kbaud
+  b. r = 1/2 → s = (1/2) * (1 Mbps) * 1/(1/2) = 1 Mbaud
+  c. r = 2 → s = (1/2) * (1 Mbps) * 1/2 = 250 Kbaud
+  d. r = 4/3 → s = (1/2) * (1 Mbps) * 1/(4/3) = 375 Kbaud
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Dalam transmisi digital, jam pengirim 0,2 persen lebih cepat dari jam penerima. Berapa bit ekstra per detik yang dikirim pengirim jika kecepatan data 1 Mbps?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Jumlah bit dihitung sebagai (0,2/100) * (1 Mbps) = 2000 bit
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Gambarkan grafik skema NRZ-L menggunakan masing-masing aliran data berikut,dengan asumsi bahwa signa11evel terakhir telah positif. Dari grafik, tebak bandwidth untuk skema ini menggunakan jumlah rata-rata perubahan level sinyal. Bandingkan tebakan Anda dengan entri yang sesuai pada Tabel 4.1
+  a. 00000000
+  b. 11111111
+  c. 01010101
+  d. 00110011
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Lihat Gambar 4.1. Bandwidth sebanding dengan (3/8)N yang berada dalam kisaran Tabel 4.1 (B = 0 hingga N) untuk skema NRZ-L.
 \end{solution}
 
 \vspace{12pt}
 
 
 \begin{exercise}
-  Contoh soal
+  Ulangi Latihan 15 untuk skema NRZ-I
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Lihat Gambar 4.2. Bandwidth sebanding dengan (4,25/8)N yang berada dalam kisaran pada Tabel 4.1 (B = 0 hingga N) untuk skema NRZ-I
 \end{solution}
 
 \vspace{12pt}
@@ -590,87 +648,127 @@ Sistem alarm biasanya periodik. Oleh karena itu, plot domain frekuensinya adalah
 
 \vspace{12pt}
 
-% Amelia Marta Dilova 9-12
+% Amelia Marta Dilova 9-12 (oke)
 \begin{exercise}
-  Contoh soal 9
+  Temukan aliran data 8-bit untuk setiap kasus yang digambarkan pada Gambar 4.36
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Aliran data dapat ditemukan sebagai berikut :
+  a. NRZ-I: 10011001
+  b. Differential Manchester: 11000100.
+  c. AMI: 01110001.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Sinyal NRZ-I memiliki kecepatan data 100 Kbps. Menggunakan Gambar 4.6, hitung nilainya
+  dari energi ternormalisasi (P) untuk frekuensi pada 0 Hz, 50 KHz, dan 100 KHz.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Kecepatan datanya 100 Kbps. Untuk setiap kasus, pertama-tama kita perlu menghitung nilai f / N. Kami kemudian menggunakan Gambar 4.6 dalam teks untuk menemukan P (energi per Hz). Semua perhitungan adalah perkiraan.
+  a. f /N = 0/100 = 0 → P = 1.0
+  b. f /N = 50/100 = 1/2 → P = 0.5
+  c. f /N = 100/100 = 1 → P = 0.0
+  d. f /N = 150/100 = 1.5 → P = 0.2
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Sinyal Manchester memiliki kecepatan data 100 Kbps. Menggunakan Gambar 4.8, hitung nilai energi ternormalisasi (P) untuk frekuensi pada 0 Hz, 50 KHz, 100 KHz.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Kecepatan datanya 100 Kbps. Untuk setiap kasus, pertama-tama kita perlu menghitung nilai f/N. Kami kemudian menggunakan Gambar 4.8 dalam teks untuk menemukan P (energi per Hz).
+  Semua perhitungan adalah perkiraan.
+  a. f /N = 0/100 = 0 → P = 0.0
+  b. f /N = 50/100 = 1/2 → P = 0.3
+  c. f /N = 100/100 = 1 → P = 0.4
+  d. f /N = 150/100 = 1.5 → P = 0.0 
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Aliran input ke encoder blok 4B/5B adalah 0100 0000 0000 0000 0000 OOOI.
+  Jawab pertanyaan berikut:
+  a. Apa aliran keluarannya?
+  b. Berapakah panjang barisan Os berturut-turut terpanjang di input?
+  c. Berapakah panjang urutan Os berturut-turut terpanjang dalam output?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  a. Aliran keluaran adalah 01010 11110 11110 11110 11110 01001
+  b. Panjang maksimum 0s berturut-turut dalam aliran input adalah 21
+  c. Panjang maksimum 0s berturut-turut dalam aliran output adalah 2.
 \end{solution}
 
 \vspace{12pt}
 
 % Muhammad Riyadhtul Akbar 13-16
 \begin{exercise}
-  Contoh soal 13
+  Hitung nilai laju sinyal untuk setiap kasus pada Gambar 4.2 jika laju data 1 Mbps dan c = 1/2.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Sebuah sinyal dengan tingkat L benar-benar dapat membawa bit
+  log2L per tingkat. Jika setiap tingkat sesuai dengan salah satu
+  elemen sinyal dan kita asumsikan rata-ratanya jika (c = 1/2), maka
+  kita harus
+  Nmax = 1/c x B x r = 2 x B x log2L
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Dalam transmisi digital, jam pengirim 0,2 persen lebih cepat dari jam penerima. Berapa bit ekstra per detik yang dikirim pengirim jika kecepatan data 1 Mbps?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Pada 1 Mbps, penerima menerima 1.001.000 bps alih-alih 
+  1.000.000 bps.
+
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Gambarkan grafik skema NRZ-L menggunakan masing-masing aliran data berikut, dengan asumsi bahwa signa11evel terakhir telah positif. Dari grafik, tebak bandwidth untuk skema ini menggunakan jumlah rata-rata perubahan level sinyal. Bandingkan tebakan Anda dengan entri yang sesuai pada Tabel 4.1.
+  sebuah. 
+  a. 00000000
+  b. 11111111
+  c. 01010101
+  d. 00110011
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  a. S = c x N x -
+  = - x 100.000 x -1 = 50.000 =50 kbaud
+  b. S = c x N x -
+  = - x 100.000 x -1 = 50.000 =50 kbaud
+  c. S = c x N x -
+  = - x 100.000 x -1 = 50.000 =50 kbaud
+  d. S = c x N x -
+  = - x 100.000 x -1 = 50.000 =50 kbaud
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Ulangi Latihan 15 untuk skema NRZ-I
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Tingkat sinyal rata-rata adalah S = NI2 = 500 kbaud. Bandwidth minimum untuk baud rata-rata ini
+  kecepatannya adalah Bnlin = S = 500 kHz
 \end{solution}
 
 \vspace{12pt}
+
+
 
 % Muhammad Rizky Fadillah 17-20
 \begin{exercise}
@@ -733,31 +831,65 @@ Sistem alarm biasanya periodik. Oleh karena itu, plot domain frekuensinya adalah
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+\\
+Temukan bandwidth untuk situasi berikut jika kita perlu memodulasi suara 5-KHz.
+a. AM
+b. PM (set =5)
+c. PM (set =1)
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+\\
+Mengingat frekuensi sinyal suara -
+
+=5kHz
+
+a) Bandwidth modulasi amplitudo Bam=2B
+=2 x 5kHz
+=10kHz
+
+b) Bandwidth yang dibutuhkan untuk modulasi fase
+$Bpm=2(1+\beta)B$ 
+Sekarang, menggantikan nilai-nilai,
+=2(1+3) x 5kHz
+=40kHz
+
+c) Bandwidth yang dibutuhkan untuk modulasi fase,
+$Bpm=2(1+\beta)B$ 
+Sekarang, menggantikan nilai-nilai,
+=2(1+1) x 5kHz
+=20kHz
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+\\
+Saluran telepon memiliki bandwidth 4 KHz. Berapa jumlah bit maksimum yang kami miliki?
+dapat mengirim menggunakan masing-masing teknik berikut? Misalkan d = O
+sebuah. 
+A. ASK
+B. QPSK
+C. 16-QAM
+D. 64-QAM
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+Kami menggunakan rumus N = [1/(1 + d)] × r × B, tetapi pertama-tama kita perlu menghitung nilai r untuk setiap kasus. sebuah. 
+A. r = log22 = 1 →N= [1/(1 + 0)] × 1 × (4 KHz) = 4 kbps 
+B. r = log24=2 →N = [1/(1 + 0)] × 2 × (4 KHz) = 8 kbps 
+C. r = log216= 4 →N = [1/(1 + 0)] × 4 × (4 KHz) = 16 kbps 
+D. r = log264= 6 →N = [1/(1 + 0)] × 6 × (4 KHz) = 24 kbpsQ19.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Sebuah perusahaan kabel menggunakan salah satu saluran TV kabel (dengan bandwidth 6 MHz) untuk menyediakan komunikasi digital bagi setiap penduduk. Berapa kecepatan data yang tersedia untuk setiap penduduk jika perusahaan menggunakan teknik 64-QAM?
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+Kita dapat menggunakan rumus: N = [1/(1 + d)] × r × B = 1 × 6 × 6 MHz = 36 Mbps
 \end{solution}
 
 \vspace{12pt}
@@ -805,46 +937,80 @@ Sistem alarm biasanya periodik. Oleh karena itu, plot domain frekuensinya adalah
 
 % Karel Chavez H 9-12
 \begin{exercise}
-  Contoh soal 9
+Sebuah perusahaan memiliki media dengan bandwidth 1-MHz (lowpass). Korporasi perlu membuat 10 saluran independen terpisah yang masing-masing mampu mengirim setidaknya 10 Mbps. Perusahaan telah memutuskan untuk menggunakan teknologi QAM. Berapa jumlah bit minimum per baud untuk setiap saluran? Berapa jumlah titik dalam diagram konstelasi untuk setiap saluran? Misalkan d = O.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+Pertama, kami menghitung bandwidth untuk setiap saluran = (1 MHz) / 10 = 100 KHz. Kami kemudian menemukan nilai r untuk setiap saluran: B = (1 + d) × (1/r) × (N) →r = N / B →r = (1 Mbps/100 KHz) = 10 Kemudian kita dapat menghitung jumlah level: L = 2r = 210 = 1024. Ini berarti bahwa kita memerlukan teknik 1024-QAM untuk mencapai kecepatan data ini.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Berapa bit per baud yang dapat kita kirim dalam setiap kasus berikut jika konstelasi sinyal memiliki salah satu dari jumlah titik berikut?
+\begin{itemize}
+\item[a.] 2
+\item[b.] 4
+\item[c.] 16
+\item[d.] 1024
+\end{itemize}
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  \begin{itemize}
+    \item[a.] $log_22 = 1$
+    \item[b.] $log_24 = 2$
+    \item[c.] $log_216 = 4$
+    \item[d.] $log_21024 = 10 $
+  \end{itemize}
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Hitung bit rate untuk baud rate yang diberikan dan jenis modulasi
+  \begin{itemize}
+    \item[a.] 1000 baud, FSK
+    \item[b.] 1000 baud, ASK
+    \item[c.] 1000 baud, BPSK
+    \item[d.] 1000 baud, 16-QAM
+  \end{itemize}
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+\begin{itemize}
+    \item[a.] Modulator yang dimaksud adalah FSK dan r = 1 Jadi, baud rate = 2000bps/1 baud rate = 2000baud
+    \item[b.] Modulator yang digunakan adalah ASK dan r = 1, baud rate = 4000bps/1 baud rate = 4000baud
+    \item[c.] Modulator yang digunakan adalah QPSK/4-PSK dan r = 2, Jadi, baud rate = 6000bps/2 baud rate = 3000baud
+    \item[d.] Modulator yang digunakan adalah 64-QAM, baud rate = 36000/6 baud rate = 6000baud
+  \end{itemize}
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+Berapa jumlah bit per baud untuk teknik berikut?
+  \begin{itemize}
+    \item[a.] ASK dengan empat amplitudo berbeda
+    \item[b.] FSK dengan 8 frekuensi berbeda
+    \item[c.] PSK dengan empat fase berbeda
+    \item[d.] QAM dengan konstelasi 128 point
+  \end{itemize}
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+Kami menggunakan rumus $r = log_2L untuk menghitung nilai r untuk setiap kasus.$
+  \begin{itemize}
+    \item[a.] $log_24 = 2$
+    \item[b.] $log_28 = 3$
+    \item[c.] $log_24 = 2$
+    \item[d.] $log_2128 = 7$
+  \end{itemize}
 \end{solution}
 
 \chapter{Bandwidth Utilization: Multiplexing and Spreading}
 
-% Muhammad Arie Setya Putra Pala 1-4
+% Muhammad Arie Setya Putra Pala 1-4 (perlu diperbaiki)
 \begin{exercise}
 \\
 Jelaskan tujuan dari multiplexing
@@ -933,43 +1099,47 @@ WDM umum untuk multiplexing sinyal optik karena memungkinkan multiplexing sinyal
 
 \vspace{12pt}
 
-% Fajar Bimantara 8-11
+% Fajar Bimantara 8-11 (20-23)
 \begin{exercise}
-  Contoh soal 8
+  Bedakan antara TDM bertingkat, TDM banyak slot, dan TDM isi pulsa.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  TDM (Time Division Multiplexing) dan FDM (Frequency Division Multiplexing) adalah dua teknik multiplexing. Perbedaan umum antara TDM dan FDM adalah bahwa TDM berbagi skala waktu untuk sinyal yang berbeda; Sedangkan FDM berbagi skala frekuensi untuk sinyal yang berbeda. Sebelum memahami kedua istilah ini secara mendalam, mari kita memahami istilah multiplexing. Multiplexing adalah teknik di mana beberapa sinyal secara bersamaan dikirim melalui satu data link. Sistem multiplexed melibatkan sejumlah perangkat yang berbagi kapasitas satu tautan, sehingga tautan (jalur) dapat memiliki banyak saluran.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal 9
+  Bedakan antara TDM sinkron dan statistik.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  kasus  TDM  sinkron,  tetapi  dpt  dimanfaatkan  sepenuhnya  oleh  slot  menuju  waktu  yang  lebih  sedikit  dan  untuk  mentransmisikan  pemanfaatan  bandwidth  dari  media.  Dalam  kasus  TDM  statistik, data  di  setiap  slot  harus  memiliki  alamat,  yang  mengidentifikasi  sumber  data.  Karena  data  yang  tiba  dari  dan  didistribusikan  ke  garis  I  /  O  tak  terduga, 
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Mendefinisikan spread spectrum dan tujuannya. Sebutkan dua teknik spread spectrum yang dibahas dalam bab ini.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Teknologi Spectrum Merupakan teknologi dengan teknik komunikasi yang menitik beratkan pada penggunaan bandwith dan power peak. Teknik ini juga lebi bnyak menggunakan modulasi LAN nirkabel, dan memiliki bentuk sinyal seperti sinyal noise tujuannya dikirimkan dengan menggunakan narrowband carrier signal dan menyebarkan sinyal itu pada kisaran frekuensi yang jauh lebih besar. Sebagai contoh, kita mungkin menggunakan 1 MHz pada 10 Watt dengan narrowband, namun pada spread spectrum kita dapat menggunakan 20 MHz pada 100 mW.
+  1.DSSS (Direct Sequence Spread Spectrum)
+  Merupakan jenis spread spectrum yang paling luas dikenal dan paling banyak digunakan, karena sistem ini dikenal paling mudah implementasinya dan memiliki data rate yang tinggi.
+  2. FHSS (Frequency Hopping Spread Spectrum)
+  Merupakan frekuensi hop dengan system pembaan dengan cara melompat dengan urutan yang bersifat pseudorandom. Pseudorandom adalah daftar frekuensi kemana arah frekuensi akan melompat dalam satu interval.
 \end{solution}
 
 \vspace{12pt}
 
 \begin{exercise}
-  Contoh soal
+  Definisikan FHSS dan jelaskan bagaimana ia mencapai penyebaran bandwidth.
 \end{exercise}
 
 \begin{solution}
-  Contoh solusi
+  Bandwidth merupakan sebuah kapasitas yang bisa dipakai di kabel ethernet supaya bisa dilewati oleh trafik paket data dengan maksimal tertentu. Adapun definisi lain dari bandwidth internet yaitu jumlah konsumsi transfer data yang dihitung di dalam satuan waktu bit per second atau bps. elakukan proses pengiriman dan juga penerimaan data hanya dalam hitungan detik. Ada juga istilah bandwidth analog. Dimana bandwidth analog ini berarti sebuah perbedaan antara frekuensi yang paling rendah dan frekuensi yang paling tinggi di suatu rentang frekuensi yang bisa diukur menggunakan satuan Hertz (Hz) yang bertujuan untuk mengetahui data ataupun informasi yang bisa ditransmisikan di suatu waktu.
 \end{solution}
 
 \vspace{12pt}
